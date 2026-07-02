@@ -1,0 +1,42 @@
+.audio-call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.call-info {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.call-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.duration {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+.call-controls {
+  display: flex;
+  gap: 20px;
+}
+
+.end-btn {
+  padding: 15px 40px;
+  background: #FF3B30;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.end-btn:hover {
+  background: #cc2e24;
+}
