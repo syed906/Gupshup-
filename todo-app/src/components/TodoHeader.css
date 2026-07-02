@@ -1,0 +1,53 @@
+.todo-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-icon {
+  font-size: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.header-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.header-text p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-icon {
+    font-size: 30px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+}

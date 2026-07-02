@@ -1,0 +1,45 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+.todo-list-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: #999;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.todo-list-empty h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.todo-list-empty p {
+  font-size: 14px;
+  color: #999;
+}

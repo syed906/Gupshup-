@@ -1,0 +1,256 @@
+.todo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.todo-item:hover {
+  background: #fafafa;
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.todo-content {
+  flex: 1;
+}
+
+.todo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  word-break: break-word;
+}
+
+.todo-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.priority-badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-high {
+  background: #fee;
+  color: #dc2626;
+}
+
+.priority-medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priority-low {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.due-date-badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #f0f0f0;
+  color: #666;
+}
+
+.due-overdue {
+  background: #fee;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.due-today {
+  background: #fef3c7;
+  color: #d97706;
+  font-weight: 600;
+}
+
+.due-upcoming {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: #e0e7ff;
+  color: #4f46e5;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tag-remove {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tag-remove:hover {
+  opacity: 0.7;
+}
+
+.todo-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.edit-input,
+.edit-select,
+.edit-date {
+  padding: 8px 10px;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.tag-input-section {
+  display: flex;
+  gap: 8px;
+  padding: 10px 20px 0 20px;
+}
+
+.tag-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-tag {
+  background: #667eea;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-tag:hover {
+  background: #764ba2;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-save,
+.btn-cancel {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.btn-edit:hover {
+  background: #bfdbfe;
+}
+
+.btn-delete {
+  background: #fee;
+  color: #dc2626;
+}
+
+.btn-delete:hover {
+  background: #fecaca;
+}
+
+.btn-save {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.btn-save:hover {
+  background: #bbf7d0;
+}
+
+.btn-cancel {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.btn-cancel:hover {
+  background: #fde68a;
+}
+
+@media (max-width: 600px) {
+  .todo-item {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+
+  .todo-meta {
+    font-size: 12px;
+  }
+
+  .todo-actions {
+    gap: 6px;
+  }
+
+  .btn-edit,
+  .btn-delete,
+  .btn-save,
+  .btn-cancel {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
